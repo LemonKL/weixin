@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.springmvc.dao.WechatPublicDao">
+   
+    <resultMap id="wechatPublicResultMap" type="WechatPublic">
+      <result property="wcId" column="hashed_password"/>
+      <result property="password" column="hashed_password"/>
+    </resultMap> 
+    
+    <insert id="insertWechatPublic" parameterType="WechatPublic"  keyProperty="wc_id">
+	    insert into Wechat_Public(wc_id,App_ID,App_Secret,URL,Token,access_token,Encoding_AES_Key,_type) 
+	    values(${wcId},${wcId})
+    </insert>
+    
+    <select id="" resultMap="wechatPublicResultMap" parameterType="WechatPublic">
+        
+    </select>
+</mapper>
