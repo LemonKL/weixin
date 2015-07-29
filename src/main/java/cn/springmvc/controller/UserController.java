@@ -9,7 +9,7 @@ public class UserController {
  
     @RequestMapping("index")
     public String index(){
-    	System.out.println("¹þà¶");
+    	System.out.println("ä½ å¥½");
         return "index";
     }
      
