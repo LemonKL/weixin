@@ -25,7 +25,9 @@ public class WechatController {
 		return "forward:/query.do";
 	}
 	
+	@RequestMapping("test")
 	public String test(){
+		System.out.println("这是测试！");
 		return "forward:/query.do";
 	}
 	
