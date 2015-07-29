@@ -25,4 +25,8 @@ public class WechatController {
 		return "forward:/query.do";
 	}
 	
+	public String test(){
+		return "forward:/query.do";
+	}
+	
 }
